@@ -67,13 +67,14 @@
   margin-top: 4%;
   padding-top: 10px;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff
 }
 .log-jogador{
-  background-color: rgb(0, 128, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .log-monstro{
-  background-color: rgba(255, 0, 0, 0.5);
+  
+  background-color: rgb(0, 128, 0, 0.5);
 }
