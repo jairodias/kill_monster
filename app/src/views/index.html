@@ -33,10 +33,33 @@
           </div>
 
         </div>
+        <div class="row d-flex justify-content-center justify-content-around py-4">
+          <button class="btn-actions atk" @click="atk">Ataque</button>
+          <button class="btn-actions atk-especial" @click="atkEspecial">Ataque Especial</button>
+          <button class="btn-actions curar"> Curar</button>
+          <button class="btn-actions desistir"> Disistir</button>
+        </div>
       </div>
-
-
-      
+      <div class="row winner d-flex justify-content-center justify-align-items-center py-4 mx-auto" v-if="winner" :style="{backgroundColor: cor}">
+          <p>{{ ganhador }}</p>
+      </div>
+      <div class="area-jogador py-4">
+          <h1>Camada de log</h1> 
+        <div class="row">
+            <div class="col-6">
+                <h5>Jogador</h> 
+                <div class="log-jogador log" v-for="player in arrayJogador">
+                    O jogador inferiu: {{player}}% de dano no life do monstro
+                </div>
+            </div>
+            <div class="col-6">
+                <h5>Monstro</h> 
+              <div class="log-monstro log" v-for="monstro in arrayMonster">
+                  O monstro inferiu: {{monstro}}% de dano no life do player
+              </div>
+            </div>
+        </div>
+      </div>
 
     </div>
       
